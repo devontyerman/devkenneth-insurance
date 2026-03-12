@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Kenneth, LLC — Life Insurance You Can Trust</title>
+  <meta name="description" content="Dev Kenneth, LLC provides affordable life insurance solutions including term life, whole life, and final expense coverage in Pinellas Park, FL.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="container">
+      <div class="logo">Dev <span>Kenneth</span>, LLC</div>
+      <button class="mobile-toggle" aria-label="Toggle navigation" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container">
+      <h1>Protect What Matters Most</h1>
+      <p>Dev Kenneth, LLC helps families secure their future with affordable, personalized life insurance coverage.</p>
+      <a href="#contact" class="btn">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Dev Kenneth, LLC</h2>
+      <p class="section-subtitle">Trusted life insurance guidance for individuals and families.</p>
+      <div class="about-content">
+        <p>Dev Kenneth, LLC is a licensed life insurance agency based in Pinellas Park, Florida. We specialize in helping individuals and families find the right life insurance coverage to protect their loved ones and secure their financial future.</p>
+        <p>We understand that choosing life insurance can feel overwhelming. That's why we take a personalized approach — listening to your needs, explaining your options in plain language, and recommending coverage that fits your budget and goals.</p>
+        <p>Whether you're looking for term life insurance, whole life coverage, or final expense protection, Dev Kenneth, LLC is here to guide you every step of the way.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">We offer a range of life insurance products to meet your unique needs.</p>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">&#128737;</div>
+          <h3>Term Life Insurance</h3>
+          <p>Affordable coverage for a set period — 10, 20, or 30 years. Ideal for protecting your family during your working years.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#127968;</div>
+          <h3>Whole Life Insurance</h3>
+          <p>Lifetime coverage with a cash value component that grows over time. A policy that works as both protection and savings.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#128150;</div>
+          <h3>Final Expense Insurance</h3>
+          <p>Designed to cover funeral costs and end-of-life expenses so your family isn't burdened during a difficult time.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#128200;</div>
+          <h3>Mortgage Protection</h3>
+          <p>Ensures your mortgage is paid off if something happens to you, keeping your family in their home.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-subtitle">Request a free quote or ask us anything about life insurance.</p>
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Dev Kenneth, LLC</h3>
+          <p><strong>Address:</strong><br>7402-3110 Grand Central<br>Pinellas Park, FL 33782</p>
+          <p><strong>Phone:</strong><br><a href="tel:+13104227440">(310) 422-7440</a></p>
+          <p><strong>Email:</strong><br><a href="mailto:insurance@devkenneth.com">insurance@devkenneth.com</a></p>
+          <p><strong>Hours:</strong><br>Monday – Friday: 9:00 AM – 6:00 PM EST<br>Saturday: By appointment<br>Sunday: Closed</p>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="https://formsubmit.co/insurance@devkenneth.com" method="POST">
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="New Quote Request — Dev Kenneth, LLC">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_next" value="">
+          <input type="text" name="_honey" style="display:none">
+
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required placeholder="John Doe">
+
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="john@example.com">
+
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+
+          <label for="interest">What are you interested in?</label>
+          <select id="interest" name="interest">
+            <option value="">Select an option</option>
+            <option value="Term Life Insurance">Term Life Insurance</option>
+            <option value="Whole Life Insurance">Whole Life Insurance</option>
+            <option value="Final Expense Insurance">Final Expense Insurance</option>
+            <option value="Mortgage Protection">Mortgage Protection</option>
+            <option value="Not Sure - Need Guidance">Not Sure — Need Guidance</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us about your coverage needs or ask a question..."></textarea>
+
+          <!-- SMS Opt-In (unchecked, optional) -->
+          <div class="sms-consent">
+            <label>
+              <input type="checkbox" name="sms_consent" value="yes">
+              By checking this box, you agree to receive recurring automated text messages from <strong>Dev Kenneth, LLC</strong> at the phone number provided, including quote follow-ups, appointment reminders, and policy updates. Consent is not a condition of purchase. Message frequency varies. Message and data rates may apply. Reply STOP to unsubscribe at any time. View our <a href="privacy.html" target="_blank">Privacy Policy</a> and <a href="terms.html" target="_blank">Terms of Service</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="logo">Dev <span>Kenneth</span>, LLC</div>
+          <p>Licensed life insurance agency serving individuals and families in Florida and beyond. Protecting your future with personalized coverage.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>7402-3110 Grand Central<br>Pinellas Park, FL 33782</p>
+          <p><a href="tel:+13104227440">(310) 422-7440</a></p>
+          <p><a href="mailto:insurance@devkenneth.com">insurance@devkenneth.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 Dev Kenneth, LLC. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
